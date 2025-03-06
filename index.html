@@ -25,17 +25,59 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .image-hover {
+      opacity: 1;
+    }
+
+    .image-container:hover .image-default {
+      opacity: 0;
+    }
+
+    .image-default {
+      transition: opacity 0.3s ease;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -50,7 +92,6 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
@@ -67,14 +108,15 @@
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2>Geetanjali Chaudhary</h2>
-            <p>I'm <span class="typed" data-typed-items="UI/UX Designer, freelancer, Nature Photographer, writer">UI/UX
+            <h2 style="font-family: 'Poppins', sans-serif;">Geetanjali Chaudhary</h2>
+            <p>I'm <span class="typed" data-typed-items="UI/UX Designer, freelancer, Nature Photographer, writer"
+                style="font-family: 'Poppins', sans-serif;">UI/UX
                 Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <!-- <a href="#"><i class="bi bi-twitter-x"></i></a> -->
+              <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+              <a href="https://www.instagram.com/designed_by_g_c/"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/geetanjali-chaudhary05/"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -100,14 +142,14 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Hey, I’m Geetanjali!</h2>
-            <p class="fst-italic py-3">
+            <h2 style="font-family: 'Poppins', sans-serif;">Hey, I’m Geetanjali!</h2>
+            <p class="py-3" style="font-family: 'Poppins', sans-serif;">
               I’m a <b>UI/UX designer</b> driven by creativity and a passion for crafting meaningful digital
               experiences. For
               me, design isn’t just about aesthetics—it’s about solving problems, telling stories, and making
               interactions seamless.
             </p>
-            <p>
+            <p style="font-family: 'Poppins', sans-serif;">
               From music apps to NFT platforms and subscription flows, every project is an opportunity to create
               *intuitive, engaging, and user-centric* solutions. My journey is ever-evolving, always focused on making
               the digital world a little more effortless and enjoyable.
@@ -121,7 +163,9 @@
                     <div class="col-lg-6">
 
                       <div class="progress">
-                        <span style="font-size: 1.2rem" class="skill"><span>figma</span> <i class="val">100%</i></span>
+                        <span style="font-size: 1.2rem" class="skill"><span
+                            style="font-family: 'Poppins', sans-serif;">figma</span> <i class="val"
+                            style="font-family: 'Poppins', sans-serif;">100%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                             aria-valuemax="100">
@@ -130,7 +174,9 @@
                       </div><!-- End Skills Item -->
 
                       <div class="progress">
-                        <span style="font-size: 1.2rem" class="skill"><span>frmaer</span> <i class="val">80%</i></span>
+                        <span style="font-size: 1.2rem" class="skill"><span
+                            style="font-family: 'Poppins', sans-serif;">frmaer</span> <i class="val"
+                            style="font-family: 'Poppins', sans-serif;">80%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                             aria-valuemax="100">
@@ -139,7 +185,8 @@
                       </div><!-- End Skills Item -->
 
                       <div class="progress">
-                        <span style="font-size: 1.2rem" class="skill"><span>canva </span> <i class="val">100%</i></span>
+                        <span style="font-size: 1.2rem" style="font-family: 'Poppins', sans-serif;"
+                          class="skill"><span>canva </span> <i class="val">100%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                             aria-valuemax="100">
@@ -152,8 +199,8 @@
                     <div class="col-lg-6">
 
                       <div class="progress">
-                        <span style="font-size: 1.2rem" class="skill"><span>spline 3d </span> <i
-                            class="val">80%</i></span>
+                        <span style="font-size: 1.2rem" style="font-family: 'Poppins', sans-serif;"
+                          class="skill"><span>spline 3d </span> <i class="val">80%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                             aria-valuemax="100">
@@ -162,7 +209,8 @@
                       </div><!-- End Skills Item -->
 
                       <div class="progress">
-                        <span style="font-size: 1.2rem" class="skill"><span>canva</span> <i class="val">100%</i></span>
+                        <span style="font-size: 1.2rem" style="font-family: 'Poppins', sans-serif;"
+                          class="skill"><span>canva</span> <i class="val">100%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                             aria-valuemax="100">
@@ -171,8 +219,8 @@
                       </div><!-- End Skills Item -->
 
                       <div class="progress">
-                        <span style="font-size: 1.2rem" class="skill"><span>Photoshop</span> <i
-                            class="val">55%</i></span>
+                        <span style="font-size: 1.2rem" style="font-family: 'Poppins', sans-serif;"
+                          class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
                         <div class="progress-bar-wrap">
                           <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
                             aria-valuemax="100">
@@ -253,8 +301,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2 style="font-family: 'Poppins', sans-serif;">Skills</h2>
+        <!-- <p style="font-family: 'Poppins', sans-serif;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -264,7 +313,8 @@
           <div class="col-lg-6">
 
             <div class="progress mt-3">
-              <span style="font-size: 1rem" class="skill"><span>User Research & Analysis
+              <span style="font-size: 1rem" style="font-family: 'Poppins', sans-serif;" class="skill"><span>User
+                  Research & Analysis
                 </span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
@@ -273,7 +323,8 @@
             </div><!-- End Skills Item -->
 
             <div class="progress mt-3">
-              <span style="font-size: 1rem" class="skill"><span>Wireframing & Prototyping
+              <span style="font-size: 1rem" style="font-family: 'Poppins', sans-serif;" class="skill"><span>Wireframing
+                  & Prototyping
                 </span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
@@ -282,8 +333,8 @@
             </div><!-- End Skills Item -->
 
             <div class="progress mt-3">
-              <span style="font-size: 1rem" class="skill"><span>Visual & Interaction Design</span> <i
-                  class="val">100%</i></span>
+              <span style="font-size: 1rem" style="font-family: 'Poppins', sans-serif;" class="skill"><span>Visual &
+                  Interaction Design</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -295,7 +346,8 @@
           <div class="col-lg-6">
 
             <div class="progress mt-3">
-              <span style="font-size: 1rem" class="skill"><span>Usability Testing & Iteration
+              <span style="font-size: 1rem" style="font-family: 'Poppins', sans-serif;" class="skill"><span>Usability
+                  Testing & Iteration
                 </span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
@@ -304,8 +356,8 @@
             </div><!-- End Skills Item -->
 
             <div class="progress mt-3">
-              <span style="font-size: 1rem" class="skill"><span>Design Systems & UI Components</span> <i
-                  class="val">100%</i></span>
+              <span style="font-size: 1rem" style="font-family: 'Poppins', sans-serif;" class="skill"><span>Design
+                  Systems & UI Components</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -313,8 +365,8 @@
             </div><!-- End Skills Item -->
 
             <div class="progress mt-3">
-              <span style="font-size: 1rem" class="skill"><span>Collaboration & Communication</span> <i
-                  class="val">100%</i></span>
+              <span style="font-size: 1rem" style="font-family: 'Poppins', sans-serif;"
+                class="skill"><span>Collaboration & Communication</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -334,8 +386,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>I'm a budding UI/UX designer who loves turning ideas into clean, purposeful designs that users can't help but
+        <h2 style="font-family: 'Poppins', sans-serif;">Resume</h2>
+        <p style="font-family: 'Poppins', sans-serif;">I'm a budding UI/UX designer who loves turning ideas into clean,
+          purposeful designs that users can't help but
           enjoy. With a knack for creating seamless digital experiences, I'm constantly sharpening my skills through
           real-world projects and finding innovative ways to enhance every user journey.</p>
       </div><!-- End Section Title -->
@@ -345,28 +398,30 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title" style="font-family: 'Poppins', sans-serif;">Sumary</h3>
 
             <div class="resume-item pb-0">
-              <h4>GEETANJALI CHAUDHARY</h4>
-              <p><em>I'm a budding UI/UX designer who loves turning ideas into clean, purposeful designs that users
+              <h4 style="font-family: 'Poppins', sans-serif;">GEETANJALI CHAUDHARY</h4>
+              <p style="font-family: 'Poppins', sans-serif;"><em>I'm a budding UI/UX designer who loves turning ideas
+                  into clean, purposeful designs that users
                   can't help but
                   enjoy. With a knack for creating seamless digital experiences, I'm constantly sharpening my skills
                   through
                   real-world projects and finding innovative ways to enhance every user journey.</em></p>
               <ul>
-                <li>Gurgaon, Haryana</li>
-                <li>9315883897</li>
-                <li>geetanjalichaudhary0510@gmail.com</li>
+                <li style="font-family: 'Poppins', sans-serif;">Gurgaon, Haryana</li>
+                <li style="font-family: 'Poppins', sans-serif;">9315883897</li>
+                <li style="font-family: 'Poppins', sans-serif;">geetanjalichaudhary0510@gmail.com</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title" style="font-family: 'Poppins', sans-serif;">Education</h3>
             <div class="resume-item">
-              <h4>Bachelor of Science in Medical</h4>
-              <h5>2019 - 2022</h5>
-              <p><em>Dronacharya Govt. Collage,Gurgaon</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
+              <h4 style="font-family: 'Poppins', sans-serif;">Bachelor of Science in Medical</h4>
+              <h5 style="font-family: 'Poppins', sans-serif;">2019 - 2022</h5>
+              <p style="font-family: 'Poppins', sans-serif;"><em>Dronacharya Govt. Collage,Gurgaon</em></p>
+              <p style="font-family: 'Poppins', sans-serif;">Qui deserunt veniam. Et sed aliquam labore tempore sed
+                quisquam iusto autem sit. Ea vero voluptatum qui
                 ut dignissimos deleniti nerada porti sand markend</p>
             </div><!-- Edn Resume Item -->
 
@@ -382,30 +437,36 @@
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" style="font-family: 'Poppins', sans-serif;">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Flow-The music Applicatio</h4>
-              <h5>2023 - Present</h5>
+              <h4 style="font-family: 'Poppins', sans-serif;">Flow-The music Applicatio</h4>
+              <h5 style="font-family: 'Poppins', sans-serif;">2023 - Present</h5>
               <ul>
-                <li>Designed a user-centric music app focused on personalized experiences, seamless navigation, and an
+                <li style="font-family: 'Poppins', sans-serif;">Designed a user-centric music app focused on
+                  personalized experiences, seamless navigation, and an
                   intuitive interface to enhance music discovery and listening.</li>
-                <h5><b>Key Responsibilities</b></h5>
-                <li>Developed wire frames, prototypes, and high-fidelity UI designs to create an intuitive, engaging
+                <h5 style="font-family: 'Poppins', sans-serif;"><b>Key Responsibilities</b></h5>
+                <li style="font-family: 'Poppins', sans-serif;">Developed wire frames, prototypes, and high-fidelity UI
+                  designs to create an intuitive, engaging
                   user experience. </li>
-                <li>Implemented a chat feature to enhance user interaction and retention.</li>
+                <li style="font-family: 'Poppins', sans-serif;">Implemented a chat feature to enhance user interaction
+                  and retention.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Website -Tea</h4>
+              <h4 style="font-family: 'Poppins', sans-serif;">Website -Tea</h4>
               <!-- <h5>2017 - 2018</h5> -->
               <ul>
-                <li>visually engaging website designed to showcase diverse tea varieties, emphasizing a unique layout
+                <li style="font-family: 'Poppins', sans-serif;">visually engaging website designed to showcase diverse
+                  tea varieties, emphasizing a unique layout
                   and user-friendly experience to stand out in the market.</li>
-                <h5><b>Key Responsibilities</b></h5>
-                <li>Designed intuitive navigation and interactive layouts to enhance product discover-ability and user
+                <h5 style="font-family: 'Poppins', sans-serif;"><b>Key Responsibilities</b></h5>
+                <li style="font-family: 'Poppins', sans-serif;">Designed intuitive navigation and interactive layouts to
+                  enhance product discover-ability and user
                   engagement.</li>
-                <li>Prototyped and tested responsive designs to ensure seamless performance.</li>
+                <li style="font-family: 'Poppins', sans-serif;">Prototyped and tested responsive designs to ensure
+                  seamless performance.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -419,72 +480,146 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>A collection of thoughtfully designed experiences, where creativity meets strategy. Each project is crafted
-          with users in mind, ensuring seamless and engaging interactions.</p>
-      </div><!-- End Section Title -->
+        <h2 style="font-family: 'Poppins', sans-serif;">Portfolio</h2>
+        <p style="font-family: 'Poppins', sans-serif;">
+          A collection of thoughtfully designed experiences, where creativity meets strategy. Each project is crafted
+          with users in mind, ensuring seamless and engaging interactions.
+        </p>
+      </div>
+      <!-- End Section Title -->
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row gy-4 isotope-container d-flex flex-nowrap overflow-auto" data-aos="fade-up"
-            data-aos-delay="200">
-
-            <div class="col-lg-3 col-md-4 col-12 portfolio-item isotope-item filter-app rounded-5">
-              <div class="portfolio-img rounded-5">
-                <img src="assets/img/masonry-portfolio/project1.png" class="img-fluid" alt="">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-11">
+            <div class="row gy-3">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="portfolio-item card shadow-xl zoom-card"
+                  style="border-radius: 3.5rem; box-shadow: 0 0 10px 0 black;">
+                  <a href="https://www.behance.net/gallery/210204543/Tea-website" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="assets/img/masonry-portfolio/project1.png" class="img-fluid rounded-5" alt="">
+                  </a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-3 col-md-4 col-12 portfolio-item isotope-item filter-product rounded-5">
-              <div class="portfolio-img rounded-5">
-                <img src="assets/img/masonry-portfolio/project2.png" class="img-fluid" alt="">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="portfolio-item card shadow-xl zoom-card"
+                  style="border-radius: 3.5rem; box-shadow: 0 0 10px 0 black;">
+                  <a href="https://www.behance.net/gallery/207330613/Flow-The-music-Application" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="assets/img/masonry-portfolio/project2.png" class="img-fluid rounded-5" alt="">
+                  </a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-3 col-md-4 col-12 portfolio-item isotope-item filter-branding rounded-5">
-              <div class="portfolio-img rounded-5">
-                <img src="assets/img/masonry-portfolio/project3.png" class="img-fluid" alt="">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="portfolio-item card shadow-xl zoom-card"
+                  style="border-radius: 3.5rem; box-shadow: 0 0 10px 0 black;">
+                  <a href="https://www.behance.net/gallery/208470743/Heuristic-Evolution-%28-Bellavita%29"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/masonry-portfolio/project3.png" class="img-fluid rounded-5" alt="">
+                  </a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-3 col-md-4 col-12 portfolio-item isotope-item filter-app rounded-5">
-              <div class="portfolio-img rounded-5">
-                <img src="assets/img/masonry-portfolio/project4.png" class="img-fluid" alt="">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="portfolio-item card shadow-xl zoom-card"
+                  style="border-radius: 3.5rem; box-shadow: 0 0 10px 0 black;">
+                  <a href="https://www.behance.net/gallery/211642047/Redesigning-Website" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="assets/img/masonry-portfolio/project4.png" class="img-fluid rounded-5" alt="">
+                  </a>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <style>
-              .portfolio-img {
-                overflow: hidden;
-              }
-
-              .portfolio-img {
-                transition: transform 0.3s ease-in-out;
-              }
-
-              .portfolio-item:hover .portfolio-img {
-                transform: scale(1.1);
-                /* Zoom-in effect */
-              }
-
-              .isotope-container {
-                white-space: nowrap;
-              }
-            </style>
-            <!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+            </div>
+          </div>
         </div>
+        <!-- End Portfolio Container -->
+      </div>
+    </section>
 
+    <style>
+      .zoom-card {
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .zoom-card:hover {
+        transform: scale(1.05);
+      }
+    </style>
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2 style="font-family: 'Poppins', sans-serif;">Some of my babies</h2>
+    </div>
+
+    <div class="flex items-center justify-center p-4">
+
+      <div class="marquee p-6">
+        <div class="marquee-content">
+          <!-- First Image Set -->
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/a.png" alt="Default Image 1"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/a1.png" alt="Hover Image 1"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+
+          <!-- Second Image Set -->
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/b.png" alt="Default Image 2"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/b2.png" alt="Hover Image 2"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+
+          <!-- Repeated for continuous marquee effect -->
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/c.png" alt="Default Image 1"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/c3.png" alt="Hover Image 1"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/d.png" alt="Default Image 2"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/d4.png" alt="Hover Image 2"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/e.png" alt="Default Image 2"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/e5.png" alt="Hover Image 2"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/f.png" alt="Default Image 2"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/f6.png" alt="Hover Image 2"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+
+          <div class="image-container mx-4">
+            <img src="/assets/img/portfolio/g.png" alt="Default Image 2"
+              class="image-default rounded-lg shadow-md w-32 h-40">
+            <img src="/assets/img/portfolio/g7.png" alt="Hover Image 2"
+              class="image-hover rounded-lg shadow-md w-40 h-40">
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </div>
+
+
+
+
+
+
+
 
     <!-- Services Section -->
     <!-- <section id="services" class="services section">
@@ -766,8 +901,9 @@
 
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2 style="font-family: 'Poppins', sans-serif;">Contact</h2>
+        <p style="font-family: 'Poppins', sans-serif;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade" data-aos-delay="100">
@@ -778,24 +914,24 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>Gurgaon, Haryana</p>
+                <h3 style="font-family: 'Poppins', sans-serif;">Address</h3>
+                <p style="font-family: 'Poppins', sans-serif;">Gurgaon, Haryana</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>9315883897</p>
+                <h3 style="font-family: 'Poppins', sans-serif;">Call Us</h3>
+                <p style="font-family: 'Poppins', sans-serif;">9315883897</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>geetanjalichaudhary0510@gmail.com</p>
+                <h3 style="font-family: 'Poppins', sans-serif;">Email Us</h3>
+                <p style="font-family: 'Poppins', sans-serif;">geetanjalichaudhary0510@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -821,7 +957,7 @@
                 <div class="col-md-12 text-center">
 
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" style="font-family: 'Poppins', sans-serif;">Send Message</button>
                 </div>
 
               </div>
@@ -838,16 +974,16 @@
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <h3 class="sitename">Geetanjali Chaudhary</h3>
-      <p>I'm a budding UI/UX designer who loves turning ideas into clean, purposeful designs that users can't help but
+      <h3 class="sitename" style="font-family: 'Poppins', sans-serif;">Geetanjali Chaudhary</h3>
+      <p style="font-family: 'Poppins', sans-serif;">I'm a budding UI/UX designer who loves turning ideas into clean,
+        purposeful designs that users can't help but
         enjoy. With a knack for creating seamless digital experiences, I'm constantly sharpening my skills through
         real-world projects and finding innovative ways to enhance every user journey.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+        <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+        <a href="https://www.instagram.com/designed_by_g_c/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/geetanjali-chaudhary05/"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -859,6 +995,9 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     function sendToWhatsApp(event) {
       event.preventDefault();
@@ -898,6 +1037,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
